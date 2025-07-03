@@ -13,3 +13,19 @@ Key Findings
 ✅ Spoofed Domain: netwrksecurity.com (not affiliated with MetaMask)
 ✅ Credential Harvesting: Fake "verification" page mimics MetaMask
 ✅ Urgency Tactics: Fake deadline (September 12, 2022) to pressure victims
+
+Headers
+======================================
+Date:
+Subject:
+
+To:
+From:
+
+Reply-To:
+Return-Path:
+
+Sender IP:
+Resolve Host:
+
+Message-ID:

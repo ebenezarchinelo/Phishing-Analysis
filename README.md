@@ -14,8 +14,7 @@ Key Findings
 ✅ Credential Harvesting: Fake "verification" page mimics MetaMask
 ✅ Urgency Tactics: Fake deadline (September 12, 2022) to pressure victims
 
-Headers
-======================================
+## 2. Headers
 Date:
 Subject:
 

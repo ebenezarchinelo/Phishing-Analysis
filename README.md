@@ -6,7 +6,7 @@
 ---
 
 ## 1. Executive Summary
-A phishing email congratulates the recipient for being chosen for an exclusive offer. They are asked to complete a 30-second survey about their experience with Verizon. Participation promises an exclusive reward offer (details unspecified). A "Start Now" prompt encourages immediate response.
+A phishing email claims to be from Binance’s official service regarding compensation payments in Bitcoin. It states that the recipient’s email was found in a database of leaked personal data from crypto projects.  The Cybersecurity Department detected over 120 leaks involving the recipient’s data. A checkbox option prompts the user to "Get Compensated in Bitcoin."
 
 
 

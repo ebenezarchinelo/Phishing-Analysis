@@ -1,6 +1,6 @@
-Phishing Email Analysis Report
+#**hishing Email Analysis Report**
 
-1. Executive Summary
+##**1. Executive Summary**
 A phishing email impersonating MetaMask Support was analyzed. The email falsely claims that unverified wallets will be "terminated" and directs victims to a malicious link (420.bio/NtRIA) designed to steal credentials.
 
 Key Findings

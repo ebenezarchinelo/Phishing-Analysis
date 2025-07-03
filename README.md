@@ -6,7 +6,9 @@
 ---
 
 ## 1. Executive Summary
-A phishing email impersonating Microsoft Corporation Board was analyzed. The email falsely claims that unverified wallets will be "terminated" and directs victims to a malicious link (420.bio/NtRIA) designed to steal credentials.
+A phishing email congratulates the recipient for being chosen for an exclusive offer. They are asked to complete a 30-second survey about their experience with Verizon. Participation promises an exclusive reward offer (details unspecified). A "Start Now" prompt encourages immediate response.
+
+
 
 Key Findings
 ✅ Confirmed Malicious by multiple vendors (VirusTotal)
@@ -28,3 +30,61 @@ Sender IP:
 Resolve Host:
 
 Message-ID:
+Phishing Analysis Report Template
+
+Headers
+======================================
+Date:
+Subject:
+
+To:
+From:
+
+Reply-To:
+Return-Path:
+
+Sender IP:
+Resolve Host:
+
+Message-ID:
+
+
+URLs
+=======================================
+
+
+
+Attachments
+======================================
+Attachment Name:
+MD5:
+SHA1:
+SHA256:
+
+
+Description
+======================================
+
+
+
+Artifact Analysis
+======================================
+Sender Analysis:
+
+
+URL Analysis:
+
+
+Attachment Analysis:
+
+
+
+Verdict
+======================================
+
+
+
+Defense Actions
+======================================
+
+

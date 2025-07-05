@@ -11,33 +11,27 @@ The goal of the analysis was to determine the emails's authenticity by analyzing
 
 ## Methodology <a id="methodology"></a> 
 I conducted a structured analysis of the email in these steps: 
-1. Initial triage: I quickly determined the potential impact of this email.
-2. Content Examination: I analyzeds the email content for language, formatting, undue sense of urgency and other social engineering red flags.
-3.  Header Analysis: Extracted and examined email headers to trace the message’s path and identify discrepancies.
-4. IP and Domain Analysis: Used MXToolbox and AbuseIPDB to verify the originating IP and sender domain.
-5. Authentication Checks: Evaluated SPF, DKIM, and DMARC results to assess sender authenticity.
-Content Inspection: Identified suspicious elements, such as the reply-to address and tracking pixel.
-6. Timestamp Verification: Analyzed hop timestamps for anomalies indicating manipulation.
+1. Initial triage: quickly assesed and determined the potential impact of this email.
+2. Content Examination: analyzed the email content for language, formatting, suspicious elements like reply-to address, undue sense of urgency and other social engineering red flags.
+3.  Header Analysis: Extracted and examined email headers to investiage mail transfer agent, trace the message’s path and identify discrepancies. 
+4.  sender analysis (IP and Domain Analysis): I used MXToolbox and AbuseIPDB to verify the originating IP and sender domain. carried out email authentication checks by evaluating SPF, DKIM, and DMARC results to assess sender authenticity.
+5. Timestamp Verification: Analyzed hop timestamps for anomalies indicating manipulation.
 
-Tools Used
-MXToolbox: For tracing the email’s server path and analyzing headers.
-VirusTotal: To check the reputation of the tracking pixel’s domain (thebandalisty.com).
-AbuseIPDB: To geolocate and assess the originating IP (89.144.44.41).
-Manual Header Parsing: To extract authentication results and sender details.
+## Tools Used <a id="tools used"></a>
+1. Sublime Text for initial email header analysis.
+2. MXToolbox: For analyzing headers and email’s server.
+3. VirusTotal: To check the domain () Ip address() reputation.
+4. AbuseIPDB: To geolocate and assess the originating IP (89.144.44.41).
+5. Manual Header Parsing: To extract authentication results and sender details.
 
+## Key Findings <a id="key findings"></a>
 
-Key Findings
-✅ Confirmed Malicious by multiple vendors (VirusTotal)
-✅ Spoofed Domain: netwrksecurity.com (not affiliated with MetaMask)
-✅ Credential Harvesting: Fake "verification" page mimics MetaMask
-✅ Urgency Tactics: Fake deadline (September 12, 2022) to pressure victims
+### 1. Headers
+Date: 	Tue, 25 Jul 2023 12:47:32 +0300
+Subject:Binance Cybersecurity
 
-## 2. Headers
-Date:
-Subject:
-
-To:
-From:
+To:	***@gmail.com
+From:info@libreriacies.es
 
 Reply-To:
 Return-Path:
@@ -45,25 +39,7 @@ Return-Path:
 Sender IP:
 Resolve Host:
 
-Message-ID:
-Phishing Analysis Report Template
-
-Headers
-======================================
-Date:
-Subject:
-
-To:
-From:
-
-Reply-To:
-Return-Path:
-
-Sender IP:
-Resolve Host:
-
-Message-ID:
-
+Message-ID:	<C2C067AE.1670873@libreriacies.es>
 
 URLs
 =======================================

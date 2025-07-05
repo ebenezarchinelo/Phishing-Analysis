@@ -29,19 +29,18 @@ I conducted a structured analysis of the email in these steps:
 ### 1. Headers
 Subject:Binance Cybersecurity
 
-From:info@libreriacies.es
+From:info@libreriacies.es (Not Binace Domain)
 
 Return-Path:info@libreriacies.es
 
 Sender IP:217[.]18[.]161[.]43
 
-Resolve Host:Trevenque Sistemas De Informacion S.l.
+Resolve Host:Trevenque Sistemas De Informacion S.l. (Not Binace Domain)
 
 Message-ID:	<C2C067AE.1670873@libreriacies.es>
 
-### Suspicious Email Routing Path
-### Email Routing Analysis
-
+### 2. Suspicious Email Routing Path
+#### Email Routing Analysis
 | Hop | Source | Destination | Status | Notes |
 |-----|--------|-------------|--------|-------|
 | 1 | `smtp.gmail.com`<br>`43.230.161.16` | `serlogal.arnoia.com` | ❌ Blacklisted | **Spoofed Gmail IP** - Not a valid Google server |
@@ -63,7 +62,6 @@ High-confidence phishing attempt with:
 
 URLs
 =======================================
-
 hxxps[://]axobox[.]com/vt/wp-track[.]php
 
 

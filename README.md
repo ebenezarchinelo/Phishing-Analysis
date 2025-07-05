@@ -113,9 +113,9 @@ Quarantine Similar Emails: Filter subjects like [IMPORTANT] Your wallet has been
 - Monitor for Beaconing Activity	If any user clicked the link, monitor for outbound C2 traffic to related domains/IPs.
 - Check for Related IoCs	Search logs for references toserlogal[.]arnoia[.]com, libreriacies[.]es, andaxobox[.]com.
 
-## Recommendations for Users and Organizations <a id="recommendations for users"></a>
+## Recommendations for Users and Organizations <a id="recommendations for users and organizations"></a>
 1. Never click links in unsolicited emails.
-2. Verify MetaMask communications via official app only.
+2. Verify Binance communications via official app only.
 3. Train employees to identify urgency-based phishing.
 
 
@@ -125,6 +125,5 @@ This phishing email analysis project demonstrated my ability to detect and analy
 References
 MXToolbox: mxtoolbox.com
 VirusTotal: virustotal.com
-AbuseIPDB: abuseipdb.com
 
 Disclaimer: This report is for educational purposes only.

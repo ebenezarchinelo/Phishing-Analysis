@@ -33,7 +33,7 @@ From:info@libreriacies.es (Non Binace affliated)
 
 Return-Path:info@libreriacies.es (Non Binace affliated)
 
-Sender IP:217[.]18[.]161[.]43
+Sender IP:217[.]18[.]161[.]43 (Defanged IP)
 
 Resolve Host:Trevenque Sistemas De Informacion S.l. (Non Binace affliated)
 
@@ -89,16 +89,71 @@ Finding: The subject creates a sense of fear and urgency, a strategy to prompt u
 
 URL: hxxps[://]axobox[.]com/vt/wp-track[.]php (Defanged for safety)
 
-![virus total](https://github.com/user-attachments/assets/0e60d584-af95-4611-af8e-51968f355980)
+![virus total](https://github.com/user-attachments/assets/8b7e1f4c-3c68-4e15-b941-5976c924724c)
 **VirusTotal Report:** - **Detection:** Flagged by multiple vendors as phishing and malicious
 
 ## Verdict <a id="verdict"></a> 
 This email was confirmed to be a malicious phishing email based on my findings.
 
 
-Defense Actions
-======================================
+## Defense Actions <a id="defense actions"></a>
+1. Immediate Mitigation
+Block Malicious Components:
+- URLs: `hxxps[://]axobox[.]com/vt/wp-track[.]php`  
+- Domains: `axobox[.]com`  
+- IPs: `217[.]18[.]161[.]43` (sender)  
+Quarantine Similar Emails: Filter subjects like [IMPORTANT] Your wallet has been Blocked, Binance or any subject that creates any sense of urgency.
 
+2. Endpoint Protection:
+Block access to flagged URLs via proxy/web filters.
+Scan endpoints for calls to one-lnk.com (link shortener used in payload).
+
+3. User Awareness
+Training:Highlight this campaign’s red flags:
+
+Urgent wallet update requests
+
+Mismatched sender (info@kommunal.se vs. anpdm.com links)
+
+Unusual link domains (420.bio, one-lnk.com)
+
+Simulated Phishing: Test users with similar templates.
+
+4. Forensic Follow-Up
+IOC Hunting:
+
+markdown
+- Search logs for:  
+  * `X-MailingID: 2::1::32676051::1838003603`  
+  * `Feedback-ID: 32676051:454358417248475A4571:2-1:apsis`  
+Threat Intelligence:
+
+Report to AbuseIPDB/VirusTotal for 91.227.208.158.
+
+Monitor for typosquatting variants (kommunaI.se, kommuna1.se).
+
+5. Long-Term Improvements
+Domain Monitoring:
+
+Register typosquatting domains for kommunal.se.
+
+Automation:
+
+Deploy SIEM alerts for emails with:
+
+Precedence: bulk + unsigned DKIM
+
+Mismatched header.from/smtp.mailfrom
+
+Why This Works:
+
+Prioritized Actions: Critical mitigations first, followed by awareness and long-term fixes.
+
+Technical Depth: Includes specific configs (SPF/DKIM) and IOCs.
+
+Adaptable: Fits SOC playbooks or executive summaries.
+
+Need to tailor this further (e.g., add screenshots, compliance references)? Let me know!
 6. Recommendations
 For Users:
 Never click links in unsolicited emails.

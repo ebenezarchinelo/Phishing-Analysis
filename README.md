@@ -33,6 +33,8 @@ From:info@libreriacies.es (Non Binace affliated)
 
 Return-Path:info@libreriacies.es (Non Binace affliated)
 
+Domain: libreriacies[.]es (Non Binace affliated)
+
 Sender IP:217[.]18[.]161[.]43 (Defanged IP)
 
 Resolve Host:Trevenque Sistemas De Informacion S.l. (Non Binace affliated)
@@ -97,82 +99,32 @@ This email was confirmed to be a malicious phishing email based on my findings.
 
 
 ## Defense Actions <a id="defense actions"></a>
-1. Immediate Mitigation
+1. Delete email permanently
+2. Immediate Mitigation
 Block Malicious Components:
-- URLs: `hxxps[://]axobox[.]com/vt/wp-track[.]php`  
+- URLs: `hxxps[://]axobox[.]com/vt/wp-track[.]php`  (phishing link)  
 - Domains: `axobox[.]com`  
 - IPs: `217[.]18[.]161[.]43` (sender)  
 Quarantine Similar Emails: Filter subjects like [IMPORTANT] Your wallet has been Blocked, Binance or any subject that creates any sense of urgency.
 
-2. Endpoint Protection:
-Block access to flagged URLs via proxy/web filters.
-Scan endpoints for calls to one-lnk.com (link shortener used in payload).
+3. At the network level:
+- Block Malicious IPs	Block associated IPs (217.18.161.43,43.230.161.16) at the perimeter firewall.
+- Sinkhole or Block URLs	Prevent access to hxxps[://]axobox[.]com/vt/wp-track[.]php using proxy filters or DNS sinkholes.
+- Monitor for Beaconing Activity	If any user clicked the link, monitor for outbound C2 traffic to related domains/IPs.
+- Check for Related IoCs	Search logs for references toserlogal[.]arnoia[.]com, libreriacies[.]es, andaxobox[.]com.
 
-3. User Awareness
-Training:Highlight this campaign’s red flags:
+## Recommendations for Users and Organizations <a id="recommendations for users"></a>
+1. Never click links in unsolicited emails.
+2. Verify MetaMask communications via official app only.
+3. Train employees to identify urgency-based phishing.
 
-Urgent wallet update requests
-
-Mismatched sender (info@kommunal.se vs. anpdm.com links)
-
-Unusual link domains (420.bio, one-lnk.com)
-
-Simulated Phishing: Test users with similar templates.
-
-4. Forensic Follow-Up
-IOC Hunting:
-
-markdown
-- Search logs for:  
-  * `X-MailingID: 2::1::32676051::1838003603`  
-  * `Feedback-ID: 32676051:454358417248475A4571:2-1:apsis`  
-Threat Intelligence:
-
-Report to AbuseIPDB/VirusTotal for 91.227.208.158.
-
-Monitor for typosquatting variants (kommunaI.se, kommuna1.se).
-
-5. Long-Term Improvements
-Domain Monitoring:
-
-Register typosquatting domains for kommunal.se.
-
-Automation:
-
-Deploy SIEM alerts for emails with:
-
-Precedence: bulk + unsigned DKIM
-
-Mismatched header.from/smtp.mailfrom
-
-Why This Works:
-
-Prioritized Actions: Critical mitigations first, followed by awareness and long-term fixes.
-
-Technical Depth: Includes specific configs (SPF/DKIM) and IOCs.
-
-Adaptable: Fits SOC playbooks or executive summaries.
-
-Need to tailor this further (e.g., add screenshots, compliance references)? Let me know!
-6. Recommendations
-For Users:
-Never click links in unsolicited emails.
-Verify MetaMask communications via official app only.
-For Organizations:
-Block 420.bio and netwrksecurity.com at firewall level.
-Train employees to identify urgency-based phishing.
-Report Generated Using:
-
-VirusTotal (URL scanning)
-Email Header Analysis
-WHOIS Lookup
-Disclaimer: This report is for educational purposes only.
 
 Conclusion
-This phishing email analysis project demonstrated my ability to detect and analyze spoofed emails using industry-standard tools and methodologies. By identifying critical indicators—suspicious IP origins, authentication failures, mismatched domains, and tracking pixels, I confirmed the email as a phishing attempt. The findings underscore the importance of robust email authentication and proactive security measures. This project enhances my portfolio as a SOC analyst, showcasing my expertise in threat detection, log analysis, and DFIR. I welcome feedback or contributions to improve this analysis, and I’m eager to apply these skills in SOC or incident response roles.
+This phishing email analysis project demonstrated my ability to detect and analyze malicious spoofed using industry-standard tools and methodologies. By identifying  indicators of compromise, I confirmed the email as a phishing attempt. The findings exemplifies the value of  email analysis in proactive security measures. I welcome feedback or contributions to improve this analysis, and I’m eager to apply these skills in SOC and  incident response roles.
+
 References
 MXToolbox: mxtoolbox.com
 VirusTotal: virustotal.com
 AbuseIPDB: abuseipdb.com
 
-
+Disclaimer: This report is for educational purposes only.

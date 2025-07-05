@@ -34,9 +34,32 @@ From:info@libreriacies.es
 Return-Path:info@libreriacies.es
 
 Sender IP:217[.]18[.]161[.]43
+
 Resolve Host:Trevenque Sistemas De Informacion S.l.
 
 Message-ID:	<C2C067AE.1670873@libreriacies.es>
+
+### Suspicious Email Routing Path
+### Email Routing Analysis
+
+| Hop | Source | Destination | Status | Notes |
+|-----|--------|-------------|--------|-------|
+| 1 | `smtp.gmail.com`<br>`43.230.161.16` | `serlogal.arnoia.com` | ❌ Blacklisted | **Spoofed Gmail IP** - Not a valid Google server |
+| 2 | `serlogal.arnoia.com`<br>`217.18.161.43` | `BN8NAM12FT011.mail.protection.outlook.com` | ✅ Clean | 6s delay - Suspicious relay before Microsoft |
+| 3 | `BN8NAM12FT011...`<br>`2603:10b6:408:106:cafe::a0` | `BN9PR03CA0616.outlook.office365.com` | ✅ Clean | Normal Microsoft internal transfer |
+| 4 | `BN9PR03CA0616...`<br>`2603:10b6:408:106::21` | `PH0PR19MB5396.namprd19.prod.outlook.com` | ✅ Clean | Standard Microsoft routing |
+| 5 | `PH0PR19MB5396...`<br>`::1` | `MN0PR19MB6312.namprd19.prod.outlook.com` | ❌ Blacklisted | **HTTPS anomaly** - Loopback IP abuse |
+
+### Key Indicators
+- 🚩 **Hop 1**: Spoofed Gmail IP (blacklisted)
+- 🚩 **Hop 2**: Unverified relay server (`arnoia.com`)
+- 🚩 **Hop 5**: Blacklisted destination with HTTPS protocol
+
+### Conclusion
+High-confidence phishing attempt with:
+- Forged headers
+- Suspicious routing path
+- Multiple blacklisted nodes	
 
 URLs
 =======================================

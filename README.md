@@ -33,7 +33,7 @@ From:info@libreriacies.es (Non Binace affliated)
 
 Return-Path:info@libreriacies.es (Non Binace affliated)
 
-Domain: libreriacies[.]es (Non Binace affliated)
+Domain: 	siapi[.]es (Non Binace affliated)
 
 Sender IP:217[.]18[.]161[.]43 (Defanged IP)
 
@@ -103,7 +103,7 @@ This email was confirmed to be a malicious phishing email based on my findings.
 2. Immediate Mitigation
 Block Malicious Components:
 - URLs: `hxxps[://]axobox[.]com/vt/wp-track[.]php`  (phishing link)  
-- Domains: `axobox[.]com`  
+- Domains: `axobox[.]com` , 	siapi[.]es 
 - IPs: `217[.]18[.]161[.]43` (sender)  
 Quarantine Similar Emails: Filter subjects like [IMPORTANT] Your wallet has been Blocked, Binance or any subject that creates any sense of urgency.
 

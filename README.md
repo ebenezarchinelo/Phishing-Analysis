@@ -29,13 +29,13 @@ I conducted a structured analysis of the email in these steps:
 ### 1. Headers
 Subject:Binance Cybersecurity
 
-From:info@libreriacies.es (Not Binace Domain)
+From:info@libreriacies.es (Not Binace affliated)
 
 Return-Path:info@libreriacies.es
 
 Sender IP:217[.]18[.]161[.]43
 
-Resolve Host:Trevenque Sistemas De Informacion S.l. (Not Binace Domain)
+Resolve Host:Trevenque Sistemas De Informacion S.l. (Not Binace affliated)
 
 Message-ID:	<C2C067AE.1670873@libreriacies.es>
 
@@ -60,6 +60,26 @@ High-confidence phishing attempt with:
 - Suspicious routing path
 - Multiple blacklisted nodes	
 
+### 3. Authentication Failures
+
+### 📧 Email Authentication Results
+
+| Check         | Result               | Status Icon | Implications                              |
+|--------------|----------------------|-------------|-------------------------------------------|
+| **SPF**      | `pass` (217.18.161.43) | ✅          | Sender IP authorized by domain            |
+| **DKIM**     | `none` (not signed)  | ❌          | No content integrity protection           |
+| **DMARC**    | `bestguesspass`      | ⚠️          | No enforced policy (domain vulnerable)    |
+| **Composite**| `pass` (Reason 109)  | ✅          | Microsoft heuristic approval              |
+
+🔍 **Legend**:
+- ✅ = Pass
+- ❌ = Fail/Missing
+- ⚠️ = Partial/Best-Guess
+
+- **SPF**: ✅ `pass` (IP 217.18.161.43 authorized)
+- **DKIM**: ❌ `none` (unsigned - high risk)
+- **DMARC**: ⚠️ `bestguesspass` (no policy)
+- **Composite**: ✅ `pass` (MS heuristic)
 URLs
 =======================================
 hxxps[://]axobox[.]com/vt/wp-track[.]php

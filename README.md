@@ -6,7 +6,24 @@ This project involved a detailed analysis of a suspicious email claiming to orig
 ## Objective <a id="objective"></a> 
 The goal of the analysis was to determine the emails's authenticity by analyzing its headers, IP origins, authentication status, and content. I examined email headers, authentication protocols, and senders details, discovering multible indicators of spoofing.
 
+## Email Preview <a id="email preview"></a>
+ ![wow](https://github.com/user-attachments/assets/c0d87fcd-9770-470c-94c4-4b3f8d05df72)
+
 ## Methodology <a id="methodology"></a> 
+I conducted a structured analysis of the email in these steps: 
+1. Initial triage: I quickly determined the potential impact of this email.
+2. Content Examination: I analyzeds the email content for language, formatting, undue sense of urgency and other social engineering red flags.
+3.  Header Analysis: Extracted and examined email headers to trace the message’s path and identify discrepancies.
+4. IP and Domain Analysis: Used MXToolbox and AbuseIPDB to verify the originating IP and sender domain.
+5. Authentication Checks: Evaluated SPF, DKIM, and DMARC results to assess sender authenticity.
+Content Inspection: Identified suspicious elements, such as the reply-to address and tracking pixel.
+6. Timestamp Verification: Analyzed hop timestamps for anomalies indicating manipulation.
+
+Tools Used
+MXToolbox: For tracing the email’s server path and analyzing headers.
+VirusTotal: To check the reputation of the tracking pixel’s domain (thebandalisty.com).
+AbuseIPDB: To geolocate and assess the originating IP (89.144.44.41).
+Manual Header Parsing: To extract authentication results and sender details.
 
 
 Key Findings

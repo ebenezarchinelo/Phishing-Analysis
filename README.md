@@ -29,13 +29,13 @@ I conducted a structured analysis of the email in these steps:
 ### 1. Headers
 Subject:Binance Cybersecurity
 
-From:info@libreriacies.es (Not Binace affliated)
+From:info@libreriacies.es (Non Binace affliated)
 
-Return-Path:info@libreriacies.es
+Return-Path:info@libreriacies.es (Non Binace affliated)
 
 Sender IP:217[.]18[.]161[.]43
 
-Resolve Host:Trevenque Sistemas De Informacion S.l. (Not Binace affliated)
+Resolve Host:Trevenque Sistemas De Informacion S.l. (Non Binace affliated)
 
 Message-ID:	<C2C067AE.1670873@libreriacies.es>
 
@@ -76,34 +76,48 @@ High-confidence phishing attempt with:
 - ❌ = Fail/Missing
 - ⚠️ = Partial/Best-Guess
 
-- **SPF**: ✅ `pass` (IP 217.18.161.43 authorized)
-- **DKIM**: ❌ `none` (unsigned - high risk)
-- **DMARC**: ⚠️ `bestguesspass` (no policy)
-- **Composite**: ✅ `pass` (MS heuristic)
-URLs
-=======================================
-hxxps[://]axobox[.]com/vt/wp-track[.]php
+### 4. Suspicious email content
+1. The use of Fear and Urgency in Email content
+Subject: “Binance Cybersecurity”
+Finding: The subject creates a sense of fear and urgency, a strategy to prompt users to click malicious links in the email.
+2. The promise of compensation in Bitcoin to bypass critical thinking..
+3. Wrong Binance logo.
+4. Non-professional content formatting.
+5. Generic Greeting.
 
+### 5. Malicious Link
 
+URL: hxxps[://]axobox[.]com/vt/wp-track[.]php (Defanged for safety)
 
-Artifact Analysis
-======================================
-Sender Analysis:
+![virus total](https://github.com/user-attachments/assets/0e60d584-af95-4611-af8e-51968f355980)
+**VirusTotal Report:** - **Detection:** Flagged by multiple vendors as phishing and malicious
 
-
-URL Analysis:
-
-
-Attachment Analysis:
-
-
-
-Verdict
-======================================
-
+## Verdict <a id="verdict"></a> 
+This email was confirmed to be a malicious phishing email based on my findings.
 
 
 Defense Actions
 ======================================
+
+6. Recommendations
+For Users:
+Never click links in unsolicited emails.
+Verify MetaMask communications via official app only.
+For Organizations:
+Block 420.bio and netwrksecurity.com at firewall level.
+Train employees to identify urgency-based phishing.
+Report Generated Using:
+
+VirusTotal (URL scanning)
+Email Header Analysis
+WHOIS Lookup
+Disclaimer: This report is for educational purposes only.
+
+Conclusion
+This phishing email analysis project demonstrated my ability to detect and analyze spoofed emails using industry-standard tools and methodologies. By identifying critical indicators—suspicious IP origins, authentication failures, mismatched domains, and tracking pixels, I confirmed the email as a phishing attempt. The findings underscore the importance of robust email authentication and proactive security measures. This project enhances my portfolio as a SOC analyst, showcasing my expertise in threat detection, log analysis, and DFIR. I welcome feedback or contributions to improve this analysis, and I’m eager to apply these skills in SOC or incident response roles.
+References
+MXToolbox: mxtoolbox.com
+VirusTotal: virustotal.com
+AbuseIPDB: abuseipdb.com
 
 

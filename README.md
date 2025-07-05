@@ -27,35 +27,21 @@ I conducted a structured analysis of the email in these steps:
 ## Key Findings <a id="key findings"></a>
 
 ### 1. Headers
-Date: 	Tue, 25 Jul 2023 12:47:32 +0300
 Subject:Binance Cybersecurity
 
-To:	***@gmail.com
 From:info@libreriacies.es
 
-Reply-To:
-Return-Path:
+Return-Path:info@libreriacies.es
 
-Sender IP:
-Resolve Host:
+Sender IP:217[.]18[.]161[.]43
+Resolve Host:Trevenque Sistemas De Informacion S.l.
 
 Message-ID:	<C2C067AE.1670873@libreriacies.es>
 
 URLs
 =======================================
 
-
-
-Attachments
-======================================
-Attachment Name:
-MD5:
-SHA1:
-SHA256:
-
-
-Description
-======================================
+hxxps[://]axobox[.]com/vt/wp-track[.]php
 
 
 

@@ -29,9 +29,9 @@ I conducted a structured analysis of the email in these steps:
 ### 1. Headers
 Subject:Binance Cybersecurity
 
-From:info@libreriacies.es (Non Binace affliated)
+From:info@libreriacies[.]es (Non Binace affliated)
 
-Return-Path:info@libreriacies.es (Non Binace affliated)
+Return-Path:info@libreriacies[.]es (Non Binace affliated)
 
 Domain: 	siapi[.]es (Non Binace affliated)
 
@@ -103,7 +103,7 @@ This email was confirmed to be a malicious phishing email based on my findings.
 2. Immediate Mitigation
 Block Malicious Components:
 - URLs: `hxxps[://]axobox[.]com/vt/wp-track[.]php`  (phishing link)  
-- Domains: `axobox[.]com` , 	siapi[.]es 
+- Domains: `siapi[.]es` , (sender)
 - IPs: `217[.]18[.]161[.]43` (sender)  
 Quarantine Similar Emails: Filter subjects like [IMPORTANT] Your wallet has been Blocked, Binance or any subject that creates any sense of urgency.
 

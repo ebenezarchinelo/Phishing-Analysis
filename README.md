@@ -1,10 +1,12 @@
 # Phishing Email Analysis Report
+**Analyzed by:** Chinelo Ebenezar  
+**Date:** 2025-07-06  
 
-## Introduction <a id="introduction"></a>
-This project involved a detailed analysis of a suspicious email claiming to originate from Binance with the subject "Binance cybersecurity". It states that the recipient’s email was found in a database of leaked personal data from crypto projects.  The Cybersecurity Department detected over 120 leaks involving the recipient’s data. A checkbox option prompts the user to "Get Compensated in Bitcoin." As a SOC analyst, I investigated the email's legitimacy using tools like MXToolbox, VirusTotal, and AbuseIPDB. This report documents my methodology, findings, and recommendations showcasing email analysis as one of my SOC skills.
+## Executiive Summary <a id="executive "></a>
+This project involved a detailed analysis of a suspicious email claiming to originate from Binance with the subject "Binance cybersecurity". The email falsely claimed the recipient’s data was exposed in leaks and offered "compensation in Bitcoin." As a SOC analyst, I investigated the email's legitimacy using tools like MXToolbox, VirusTotal, and AbuseIPDB. This report documents my methodology, key findings, demonstrating proficiency in email header analysis, threat intelligence tools, and phishing mitigation.
 
-## Objective <a id="objective"></a> 
-The goal of the analysis was to determine the emails's authenticity by analyzing its headers, IP origins, authentication status, and content. I examined email headers, authentication protocols, and senders details, discovering multible indicators of spoofing.
+## Objective <a id="objective"></a>  
+The goal of the analysis was to determine the emails's authenticity by analyzing its headers, IP origins, authentication status, and content. I examined email headers, authentication protocols, senders details, and social engineering tactics discovering multible indicators of spoofing.
 
 ## Email Preview <a id="email preview"></a>
  ![wow](https://github.com/user-attachments/assets/c0d87fcd-9770-470c-94c4-4b3f8d05df72)

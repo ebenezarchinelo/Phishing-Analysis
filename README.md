@@ -39,7 +39,7 @@ Domain: 	siapi[.]es (Non Binace affliated)
 
 Sender IP:217[.]18[.]161[.]43 (Defanged IP)
 
-Resolve Host:Trevenque Sistemas De Informacion S.l. (Non Binace affliated)
+Resolve Host:serlogal.arnoia[.]com (Non Binace affliated)
 
 Message-ID:	<C2C067AE.1670873@libreriacies.es>
 
@@ -53,12 +53,12 @@ Message-ID:	<C2C067AE.1670873@libreriacies.es>
 | 4 | `BN9PR03CA0616...`<br>`2603:10b6:408:106::21` | `PH0PR19MB5396.namprd19.prod.outlook.com` | ✅ Clean | Standard Microsoft routing |
 | 5 | `PH0PR19MB5396...`<br>`::1` | `MN0PR19MB6312.namprd19.prod.outlook.com` | ❌ Blacklisted | **HTTPS anomaly** - Loopback IP abuse |
 
-### Key Indicators
+#### Key Indicators
 - 🚩 **Hop 1**: Spoofed Gmail IP (blacklisted)
 - 🚩 **Hop 2**: Unverified relay server (`arnoia.com`)
 - 🚩 **Hop 5**: Blacklisted destination with HTTPS protocol
 
-### Conclusion
+#### Conclusion
 High-confidence phishing attempt with:
 - Forged headers
 - Suspicious routing path
@@ -84,7 +84,7 @@ High-confidence phishing attempt with:
 1. The use of Fear and Urgency in Email content
 Subject: “Binance Cybersecurity”
 Finding: The subject creates a sense of fear and urgency, a strategy to prompt users to click malicious links in the email.
-2. The promise of compensation in Bitcoin to bypass critical thinking..
+2. The promise of compensation in Bitcoin to bypass critical thinking.
 3. Wrong Binance logo.
 4. Non-professional content formatting.
 5. Generic Greeting.

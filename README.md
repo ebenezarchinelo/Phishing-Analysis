@@ -126,5 +126,3 @@ This phishing email analysis project demonstrated my ability to detect and analy
 References
 MXToolbox: mxtoolbox.com
 VirusTotal: virustotal.com
-
-Disclaimer: This report is for educational purposes only.

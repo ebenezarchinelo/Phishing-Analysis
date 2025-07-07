@@ -1,6 +1,5 @@
 # Phishing Email Analysis Report
 **Analyzed by:** Chinelo Ebenezar  
-**Date:** 2025-07-06  
 
 ## Executiive Summary <a id="executive "></a>
 This project involved a detailed analysis of a suspicious email claiming to originate from Binance with the subject "Binance cybersecurity". The email falsely claimed the recipient’s data was exposed in leaks and offered "compensation in Bitcoin." As a SOC analyst, I investigated the email's legitimacy using tools like MXToolbox, VirusTotal, and AbuseIPDB. This report documents my methodology, key findings, demonstrating proficiency in email header analysis, threat intelligence tools, and phishing mitigation.
